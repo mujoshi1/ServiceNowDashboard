@@ -403,7 +403,7 @@ dropdown = dbc.DropdownMenu(color="success",direction="left", right=False,
 
 #path =  "\\Dashboard Apps\\ServiceNowDashboard\\data\\"
 path = os.getcwd()
-path = os.path.join(path,'data\\')
+path = os.path.join(path,'data/')
 print(path)
 reportweeks = path + 'Weeks.csv'
 weeksfile = pd.read_csv(reportweeks)
