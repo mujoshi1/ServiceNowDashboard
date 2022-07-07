@@ -355,7 +355,7 @@ regions = ['All Regions', 'APAC','EMEA','Global - EMEA','LATAM','NA.','Global - 
 #================================================================================================================
 #path =  "\\Dashboard Apps\\ServiceNowDashboard\\data\\"
 path = os.getcwd()
-path = os.path.join(path,'data\\')
+path = os.path.join(path,'data/')
 cummulativethroughtputdata = path + 'Cummulative Weekly Incident Data.csv'
 cummulativebacklogdata = path + 'Cummulative Weekly Backlog Data.csv'
 reportweeks = path + 'Weeks.csv'
