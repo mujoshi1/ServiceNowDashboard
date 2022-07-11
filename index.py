@@ -1,5 +1,6 @@
 import dash_core_components as dcc
 import dash_html_components as html
+import os
 from dash.dependencies import Input, Output
 
 from app import app
@@ -30,8 +31,9 @@ def display_page(pathname):
         return path
     except KeyError:
             return "404 Page Error! Please choose a link"
-    
+
+port = int(os.getenv('PORT', 8000))
+
 if __name__ == '__main__':
-    app.run_server(debug=False, host=('0.0.0.0'))
-    
-    
+    app.run_server(host='0.0.0.0', port=port, debug=False)
+    # app.run_server(debug=False, host=('0.0.0.0'))
